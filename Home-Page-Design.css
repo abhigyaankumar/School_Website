@@ -1,0 +1,248 @@
+*{
+    margin:0;
+    padding:0;
+}
+/*-------------------------------------------------first Container-fluid Design-------------------------------------------------------*/
+
+/*--------------------Navbar Background Design-------------------------*/
+.Navbar-Design{
+    background:linear-gradient(-160.5deg,#1fafd3 50%, #0c0445 50%);
+    border-radius: 10px 40px;
+}
+.navbar{
+    color: white;
+
+}
+/*--------------------Navbar A tag Design-------------------------*/
+.navbar-nav a{
+    font-size: 30px;
+    font-weight: 700;
+}
+.navbar-nav li{
+    padding: 6px;
+}
+/*--------------------Navbar Animation Design-------------------------*/
+.shine{
+    background: linear-gradient(to right, orange 0%, rgb(229, 229, 19) 10%, greenyellow 20%);
+    background-position: 0;
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+    animation: shine 6s infinite linear forwards;
+    font-weight: 900;
+    font-size: 35px;
+    text-decoration: none;
+}
+@keyframes shine{
+    0%{
+        background-position:0;
+    }
+    50%{
+            background-position:190px;
+    }
+    100%{
+            background-position:190px;
+    }
+    }
+/*-------------------------------------------------Second Container-fluid Design-----------------------------------------------------*/
+.Second-container{
+    border-bottom: 5px solid rgb(234, 228, 228);
+}
+.icon i{
+    padding: 10px;
+    padding-top: 70px;
+}
+.fa-home{
+    color: greenyellow;
+}
+.fa-facebook{
+    color: #2640d6;
+
+}
+.fa-instagram{
+    color: red;
+
+}
+.fa-twitter{
+    color: #1fafd3;
+}
+/*-------------------------------------------------Thrid Container-fluid Design-------------------------------------------------------*/
+.tnews li:not(:first-child):before{
+   padding: 0 15px;
+   content: '|';
+}
+.vall:after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    top: 0;
+    border-top: 23px solid transparent;
+    border-bottom: 25px solid transparent;
+    border-left: 25px solid #0a0933;
+    right: -25px;
+}
+.topnews_headlines ul li a{
+    color: white;
+}
+/*-------------------------------------------------Fourth Container-fluid Design-------------------------------------------------------*/
+.Home-Desgin-page h4{
+    font-size: 30px;
+    font-weight: 700;
+    color: black;
+}
+.Home-Desgin-page h5{
+    font-size: 20px;
+    color: rgb(25, 12, 94);
+    font-weight: 600;
+}
+.Home-Desgin-page p{
+    font-size: 20px;
+    font-weight: 500;
+}
+/*--------------------Request-a-Callback Design-------------------------*/
+.Request-a-Callback{
+    border:1px solid #0c0445;
+    box-shadow: 0px 0px 10px #0c0445,
+                0px 0px 20px #0c0445,
+                0px 0px 35px #0c0445 ;
+}
+.Request-a-Callback h4{
+    color: orange;
+    font-size: 45px;
+    font-weight: 700;
+}
+.Request-a-Callback p{
+    color:rgb(25, 12, 94);
+    font-weight: bold;
+}
+/*-------------------------------------------------Fifth Container-fluid Design-------------------------------------------------------*/
+.achievement{
+    background:linear-gradient(-160.5deg,#158f4c 50%, #0c0445 50%);
+    border-radius: 50px 50px;
+}
+.achievement-item span{
+    color: white;
+    font-size: 45px;
+    font-weight: 500;
+}
+.achievement-item p{
+    color: white;
+    font-size: 25px;
+}
+/*-------------------------------------------------Sixth Container-fluid Design-------------------------------------------------------*/
+.Your-Child-Deserves-The-Best h5{
+    color:rgb(25, 12, 94);
+    font-size: 25px;
+    font-weight: 800;
+}
+.Your-Child-Deserves-The-Best div div h6 span{
+    width: 100px;
+    border: 2px solid orange;
+}      
+.Your-Child-Deserves-The-Best div div h6{
+    font-size: 25px;
+    font-weight: 800;
+    color: rgb(26, 211, 236);
+}
+.Your-Child-Deserves-The-Best div div p{
+    font-size: 20px;
+}
+.Your-Child-Deserves-The-Best img{
+    border:1px solid #0c0445;
+    box-shadow: 0px 0px 10px #0c0445,
+                0px 0px 20px #0c0445,
+                0px 0px 35px #0c0445 ;
+
+}
+/*-------------------------------------------------Sixth Container-fluid Design-------------------------------------------------------*/
+.btn-whatsapp-pulse {
+    background: #25d366;
+    color: white;
+    position: fixed;
+    bottom: 20px !important;
+    right: 20px;
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 0;
+    height: 0;
+    padding: 35px;
+    border-radius: 50%;
+    animation-name: pulse;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-out;
+    animation-iteration-count: infinite;
+}
+.btn-whatsapp-pulse1 {
+    background: #25d366;
+    color: white;
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 0;
+    height: 0;
+    padding: 35px;
+    text-decoration: none;
+    border-radius: 50%;
+    animation-name: pulse;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-out;
+    animation-iteration-count: infinite;
+}
+
+@keyframes pulse {
+    0% {
+        box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.5);
+    }
+    80% {
+        box-shadow: 0 0 0 14px rgba(37, 211, 102, 0);
+    }
+}
+
+.btn-whatsapp-pulse-border {
+    bottom: 120px;
+    right: 20px;
+    animation-play-state: paused;
+}
+
+.btn-whatsapp-pulse-border::before {
+    content: "";
+    position: absolute;
+    border-radius: 50%;
+    padding: 25px;
+    border: 5px solid #25d366;
+    opacity: 0.75;
+    animation-name: pulse-border;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-out;
+    animation-iteration-count: infinite;
+}
+
+@keyframes pulse-border {
+    0% {
+        padding: 25px;
+        opacity: 0.75;
+    }
+    75% {
+        padding: 50px;
+        opacity: 0;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+.btn-whatsapp-pulse1:hover{
+    list-style: none;
+    color: orange;
+    text-decoration: none;
+}
+.btn-whatsapp-pulse:hover{
+    list-style: none;
+    color: orange;
+    text-decoration: none;
+}
